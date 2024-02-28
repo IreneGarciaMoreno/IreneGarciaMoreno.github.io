@@ -7,6 +7,16 @@
 <body>
     <h1>¡Cuidado! Has caído en el phishing.</h1>
     <p>En un caso real, tras pinchar en el enlace del email recibido, se dirigiría a esta web, donde se imitaría la web de login real, pero realmente sería una web falsa que capturaría las credenciales de inicio de sesión.</p>
-    <img src="https://www.lisot.com/wp-content/uploads/2021/06/que-es-phising.jpg" alt="Imagen de phishing" width="800" height="600"">
+    <img src="https://www.lisot.com/wp-content/uploads/2021/06/que-es-phising.jpg" alt="Imagen de phishing" width="800" height="600">
+
+    <form action="/procesar.php" method="post">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br>
+
+        <input type="submit" value="Iniciar sesión">
+    </form>
 </body>
 </html>
